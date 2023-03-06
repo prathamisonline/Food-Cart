@@ -1,13 +1,13 @@
+import { useContext } from "react";
 import React from "react";
 import "./HeaderCartButton.css";
-import { useContext } from "react";
 import CartContext from "../Store/cart-context";
 
 const HeaderCartButton = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const numberOfCartItems = cartCtx.items.reduce((currItem, item) => {
-    return currItem + item.amount;
+  const numberOfCartItems = cartCtx.items.reduce((currNumber, item) => {
+    return currNumber + item.amount;
   }, 0);
 
   return (
@@ -22,7 +22,7 @@ const HeaderCartButton = (props) => {
         </svg>
       </span>
       <span className="headerCartButton-text">Your Cart</span>
-      <span className="headerCartButton-counter"> 3</span>
+      <span className="headerCartButton-counter"> {numberOfCartItems}</span>
     </button>
   );
 };
