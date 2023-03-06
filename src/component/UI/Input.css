@@ -1,0 +1,14 @@
+.input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.input input {
+  width: 2rem;
+  border: 1px solid #ccc;
+}

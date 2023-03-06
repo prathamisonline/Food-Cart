@@ -1,0 +1,13 @@
+.all-meals {
+  width: 50rem;
+  margin: auto;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.meal-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
